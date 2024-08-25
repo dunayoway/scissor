@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scissor</title>
+    <link
+      rel="shortcut icon"
+      href="/assets/img/favicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <header class="header container">
+      <img src="/assets/img/logo.png" class="logo" />
+
+      <nav class="nav">
+        <ul class="nav__list nav__list-primary">
+          <li class="nav__item">
+            <a href="#MyURLs" class="nav__link nav__link-accent">My URLs</a>
+          </li>
+          <li class="nav__item">
+            <a href="#Features" class="nav__link nav__link-features"
+              >Features
+              <img src="/assets/img/dropdown-icon.png" />
+            </a>
+          </li>
+          <li class="nav__item">
+            <a href="#Pricing" class="nav__link">Pricing</a>
+          </li>
+          <li class="nav__item">
+            <a href="#Analytics" class="nav__link">Analytics</a>
+          </li>
+          <li class="nav__item"><a href="#FAQs" class="nav__link">FAQs</a></li>
+        </ul>
+
+        <ul class="nav__list nav__list-secondary">
+          <li class="nav__item">
+            <a href="#Login" class="nav__link nav__link-accent">Log in</a>
+          </li>
+          <li class="nav__item">
+            <a href="#TryForFree" class="nav__link nav__link-btn"
+              >Try for free</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="container">
+        <h1 class="hero__title">
+          Optimize Your Online Experience with Our <br />
+          Advanced
+          <span>URL Shortening</span>
+          Solution
+        </h1>
+        <img src="/assets/img/vector1.png" id="vector1" />
+        <p class="hero__text">
+          Personalize your shortened URLs to align with your brand identity.
+          Utilize custom slugs, branded links, and domain customization options
+          to reinforce your brand presence and <br />
+          enhance user engagement.
+        </p>
+        <div class="hero__buttons">
+          <a href="#SignUp" class="hero__link hero__link-btn">Sign Up</a>
+          <a href="#LearnMore" class="hero__link">Learn more</a>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box-frame">
+          <img src="/assets/img/vector2.png" id="box-frame__bg" />
+          <img src="/assets/img/chain.png" />
+          <p>
+            Seamlessly transform your long URLs into <span>concise</span> <br />
+            and <span> shareable links </span> with just few clicks.
+          </p>
+        </div>
+      </div>
+      <div>
+        <img src="assets/img/bg2.png" />
+      </div>
+    </section>
+
+    <section class="desc">
+      <div class="desc__header">
+        <div class="container row">
+          <h2 class="section__title">
+            One Stop. <br />
+            Four <span>Possibilities</span>.
+          </h2>
+          <div class="stats-list">
+            <div class="stat">
+              <p class="stat-fig">3M</p>
+              <p class="stat-text">Active users</p>
+            </div>
+            <div class="stat">
+              <p class="stat-fig">60M</p>
+              <p class="stat-text">
+                Links & QR <br />
+                codes created
+              </p>
+            </div>
+            <div class="stat">
+              <p class="stat-fig">1B</p>
+              <p class="stat-text">
+                Clicked & Scanned <br />
+                connections
+              </p>
+            </div>
+            <div class="stat">
+              <p class="stat-fig">300k</p>
+              <p class="stat-text">App Integrations</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="desc__main container">
+        <img src="/assets/img/vector3.png" id="vector3" />
+        <div>
+          <h2 class="section__title">Why choose <span>Scissors</span></h2>
+          <p class="section__text" style="width: 97%; margin-left: auto">
+            Scissors is the hub of everything that has to do <br />
+            with your link management. We shorten your URLs, <br />
+            allow you creating custom ones for your personal, <br />
+            business, event usage. Our swift QR code <br />
+            creation, management and usage tracking with <br />
+            advance analytics for all of these is second to <br />
+            none.
+          </p>
+        </div>
+        <div class="grid">
+          <div class="grid__item">
+            <img src="/assets/img/vector4.png" />
+            <h3 class="section__subtitle">URL Shortening</h3>
+            <p class="section__text">
+              Scissor allows you to shorten URLs of your <br />business, events.
+              Shorten your URL at scale, <br />URL redirects.
+            </p>
+          </div>
+          <div class="grid__item">
+            <img src="/assets/img/vector5.png" />
+            <h3 class="section__subtitle">Custom URLs</h3>
+            <p class="section__text">
+              With Scissor, you can create custom URLs, <br />with the length
+              you want! A solution for socials <br />and businesses.
+            </p>
+          </div>
+          <div class="grid__item">
+            <img src="/assets/img/vector6.png" />
+            <h3 class="section__subtitle">QR Codes</h3>
+            <p class="section__text">
+              Generate QR codes to your business, events. <br />
+              Bring your audience and customers to your <br />
+              doorstep with this scan and go solution.
+            </p>
+          </div>
+          <div class="grid__item">
+            <img src="/assets/img/vector7.png" />
+            <h3 class="section__subtitle">Data Analytics</h3>
+            <p class="section__text">
+              Receive data on the usage of either your <br />
+              shortened URL, custom URLs or generated QR <br />
+              codes. Embedded to monitor progress.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing container">
+      <div class="pricing__header">
+        <img src="/assets/img/vector3.png" id="vector3" />
+        <h1 class="section__title">
+          A <span>price perfect</span> for your needs.
+        </h1>
+        <p class="section__text">
+          From catering for your personal, business, event, socials needs, you
+          can be <br />
+          rest assured we have you in mind in our pricing.
+        </p>
+      </div>
+      <div class="plan-box">
+        <div class="plan-card plan-card-primary plan-card-primary-left">
+          <h3 class="plan-category">Basic</h3>
+          <h4 class="plan-price">Free</h4>
+          <p class="plan-desc">Free plan for all users</p>
+          <ul class="features-list">
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Unlimited URL Shortening
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Basic Link Analytics
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Customizable Short Links
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Standard Support
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Ad-supported
+            </li>
+          </ul>
+        </div>
+        <div class="plan-card plan-card-secondary">
+          <h3 class="plan-category">Professional</h3>
+          <h4 class="plan-price">$15/month</h4>
+          <p class="plan-desc">Ideal for business creators</p>
+          <ul class="features-list">
+            <li class="feature">
+              <img src="/assets/img/list-icon1.png" class="feature-list-icon" />
+              Enhanced Link Analytics
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon1.png" class="feature-list-icon" />
+              Custom Branded Domains
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon1.png" class="feature-list-icon" />
+              Advanced Link Customization
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon1.png" class="feature-list-icon" />
+              Priority Support
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon1.png" class="feature-list-icon" />
+              Ad-free Experience
+            </li>
+          </ul>
+        </div>
+        <div class="plan-card plan-card-primary plan-card-primary-right">
+          <h3 class="plan-category">Teams</h3>
+          <h4 class="plan-price">$25/month</h4>
+          <p class="plan-desc">Share with up to 10 users</p>
+          <ul class="features-list">
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Team Collaboration
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              User Roles and Permissions
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Enhanced Security
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              API Access
+            </li>
+            <li class="feature">
+              <img src="/assets/img/list-icon.png" class="feature-list-icon" />
+              Dedicated Account Manager
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="pricing__buttons">
+        <a href="#SignUp" class="pricing__btn">Get Custom Pricing</a>
+        <a href="#LearnMore" class="pricing__btn pricing__btn-accent"
+          >Select Pricing</a
+        >
+      </div>
+    </section>
+
+    <section class="main">
+      <div class="container">
+        <form id="urlForm">
+          <input
+            type="text"
+            name="url"
+            id="url"
+            placeholder="Paste URL here..."
+          />
+          <div>
+            <select
+              type=""
+              name="domain"
+              id="domain"
+              placeholder="Choose Domain"
+            >
+              <option value="Choose Domain">Choose Domain</option>
+              <option value="tinyurl.com">tinyurl.com</option>
+            </select>
+            <input
+              type="text"
+              name="alias"
+              id="alias"
+              placeholder="Type Alias here"
+            />
+          </div>
+          <p id="result"></p>
+          <button type="submit">
+            Trim URL <img src="assets/img/magic-icon.png" />
+          </button>
+        </form>
+        <p>
+          By clicking TrimURL, I agree to the
+          <span
+            >Terms of Service, <br />
+            Privacy Policy</span
+          >
+          and Use of Cookies.
+        </p>
+      </div>
+    </section>
+
+    <section class="faqs container">
+      <div class="faqs__header">
+        <img src="/assets/img/vector3.png" id="vector3" />
+        <h1 class="section__title">FAQs</h1>
+      </div>
+      <div class="faqs__list">
+        <div class="faq">
+          <p class="faq__q">
+            How does URL shortening work?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" id="icon" />
+          </p>
+          <p id="faq__a">
+            URL shortening works by taking a long URL and creating a shorter,
+            condensed version that redirects to the <br />
+            original URL. When a user clicks on the shortened link, they are
+            redirected to the intended destination.
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            Is it necessary to create an account to use the URL shortening
+            service? <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            Are the shortened links permanent? Will they expire?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            Are there any limitations on the number of URLs I can shorten?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            Can I customize the shortened URLs to reflect my brand or content?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            Can I track the performance of my shortened URLs?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            How secure is the URL shortening service? Are the shortened links
+            protected <br />
+            against spam or malicious activity?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            What is a QR code and what can it do?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+        <div class="faq">
+          <p class="faq__q">
+            Is there an API available for integrating the URL shortening service
+            into my own <br />
+            applications or websites?
+            <img src="/assets/img/plus-icon.png" class="plus-icon" />
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="frame">
+      <div class="container">
+        <section class="section__title">
+          Revolutionizing Link Optimization
+        </section>
+        <a href="#GetStarted" class="frame__btn">Get Started</a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__header">
+            <img src="/assets/img/flogo.png" class="logo f-logo" />
+            <div class="socials">
+              <img src="/assets/img/twitter-icon.png" class="social-icon" />
+              <img src="/assets/img/ig-icon.png" class="social-icon" />
+              <img src="/assets/img/linkedin-icon.png" class="social-icon" />
+              <img src="/assets/img/fb-icon.png" class="social-icon" />
+            </div>
+          </div>
+          <nav class="footer-nav">
+            <div>
+              <h5 class="footer-nav__list__heading">Why Scissor ?</h5>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list__item">Scissor 101</li>
+                <li class="footer-nav__list__item">Integrations & AP</li>
+                <li class="footer-nav__list__item">Pricing</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-nav__list__heading">Solutions</h5>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list__item">Social Media</li>
+                <li class="footer-nav__list__item">Digital Marketing</li>
+                <li class="footer-nav__list__item">Customer Service</li>
+                <li class="footer-nav__list__item">For Developers</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-nav__list__heading">Products</h5>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list__item">Link Management</li>
+                <li class="footer-nav__list__item">QR Codes</li>
+                <li class="footer-nav__list__item">Link-in-bio</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-nav__list__heading">Company</h5>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list__item">About Scissor</li>
+                <li class="footer-nav__list__item">Careers</li>
+                <li class="footer-nav__list__item">Partners</li>
+                <li class="footer-nav__list__item">Press</li>
+                <li class="footer-nav__list__item">Contact</li>
+                <li class="footer-nav__list__item">Reviews</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-nav__list__heading">Resources</h5>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list__item">Blog</li>
+                <li class="footer-nav__list__item">Resource Library</li>
+                <li class="footer-nav__list__item">Developers</li>
+                <li class="footer-nav__list__item">App Connectors</li>
+                <li class="footer-nav__list__item">Support</li>
+                <li class="footer-nav__list__item">Trust Center</li>
+                <li class="footer-nav__list__item">Browser Extension</li>
+                <li class="footer-nav__list__item">Mobile App</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-nav__list__heading">Features</h5>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list__item">Features</li>
+                <li class="footer-nav__list__item">Branded Links</li>
+                <li class="footer-nav__list__item">Mobile Links</li>
+                <li class="footer-nav__list__item">Campaign</li>
+                <li class="footer-nav__list__item">Management & Analytics</li>
+                <li class="footer-nav__list__item">QR Code generation</li>
+              </ul>
+            </div>
+            <div>
+              <h5 class="footer-nav__list__heading">Legal</h5>
+              <ul class="footer-nav__list">
+                <li class="footer-nav__list__item">Privacy Policy</li>
+                <li class="footer-nav__list__item">Cookie Policy</li>
+                <li class="footer-nav__list__item">Terms of Service</li>
+                <li class="footer-nav__list__item">Acceptable Use Policy</li>
+                <li class="footer-nav__list__item">Code of Conduct</li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+        <div class="footer-text-container">
+          <p class="footer-text">Term of Service</p>
+          <img src="/assets/img/border-icon.png" class="footer-text-border" />
+          <p class="footer-text">Security</p>
+          <img src="/assets/img/border-icon.png" class="footer-text-border" />
+          <p class="footer-text">ⓒ Scissor 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
