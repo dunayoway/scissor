@@ -10,9 +10,8 @@ document.getElementById("urlForm").addEventListener("submit", async (event) => {
 
   if (!url) {
     resultElement.style.display = "block";
-    resultElement.textContent = "Please enter a URL.";
+    resultElement.textContent = "Please enter a URL!";
     resultElement.className = "error"; // Set the error class
-    console.log("clicked");
     return;
   }
 
@@ -31,11 +30,11 @@ document.getElementById("urlForm").addEventListener("submit", async (event) => {
   } catch (error) {
     console.error("Axios error:", error);
     resultElement.textContent = `An error occurred: ${error.message}`;
-    resultElement.className = "error"; // Set the error class
+    resultElement.className = "error";
   }
 });
 
-// Toggle open FAQ answer
+// Code to toggle open FAQ answer
 const icon = document.getElementById("icon");
 const answer = document.getElementById("faq__a");
 
