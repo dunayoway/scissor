@@ -97,6 +97,10 @@ body {
   border-radius: 100px;
 }
 
+#menu-icon {
+  display: none;
+}
+
 .header div i {
   font-size: 2.5rem;
   color: var(--accent);
@@ -735,11 +739,11 @@ select {
 @media (max-width: 585px) {
   .nav {
     position: absolute;
-    width: 100%;
+    width: 95%;
     top: 50px;
     left: 50%;
     transform: translateX(-50%);
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -766,6 +770,11 @@ select {
     font-size: 3.5rem;
   }
 
+  .nav__link:hover, .nav__list-secondary .nav__item .nav__link:hover{
+    color: var(--accent);
+    background-color: #fff;
+  }
+
   .nav__link-features img {
     display: none;
   }
@@ -775,6 +784,10 @@ select {
     color: black;
     padding: 0;
     border-radius: 0;
+  }
+
+  #menu-icon {
+    display: block;
   }
 
   .hero__text {
