@@ -18,7 +18,7 @@
 }
 
 :root {
-  --accent: rgba(0, 101, 254);
+  --accent: rgb(0, 101, 254);
   font-size: 62.5%;
 }
 
@@ -95,6 +95,12 @@ body {
   color: #fff;
   padding: 1.2rem 2.4rem;
   border-radius: 100px;
+}
+
+.header div i {
+  font-size: 2.5rem;
+  color: var(--accent);
+  cursor: pointer;
 }
 
 .hero {
@@ -727,6 +733,50 @@ select {
 }
 
 @media (max-width: 585px) {
+  .nav {
+    position: absolute;
+    width: 100%;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 101, 254, 0.95);
+    gap: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .nav__list-secondary .nav__item .nav__link {
+    font-size: 3.5rem;
+    color: #fff;
+  }
+
+  .nav__link {
+    color: #fff;
+    font-size: 3.5rem;
+  }
+
+  .nav__link-features img {
+    display: none;
+  }
+
+  .nav__link-btn {
+    background-color: transparent;
+    color: black;
+    padding: 0;
+    border-radius: 0;
+  }
+
   .hero__text {
     width: 80%;
   }

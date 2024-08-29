@@ -1,3 +1,20 @@
+const nav = document.getElementById("nav");
+const menuIcon = document.getElementById("menu-icon");
+let menuOpen = false;
+
+menuIcon.addEventListener("click", () => {
+  if (menuOpen) {
+    menuIcon.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
+    nav.style.display = "none";
+  } else {
+    menuIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+    nav.style.display = "flex";
+  }
+
+  menuOpen = !menuOpen;
+  console.log(menuIcon.innerHTML);
+});
+
 // Code to shorten URL using TinyURL API via Axios
 
 document.getElementById("urlForm").addEventListener("submit", async (event) => {

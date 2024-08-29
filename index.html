@@ -10,13 +10,16 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/aa042adad8.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="header container">
       <img src="/assets/img/logo.png" class="logo" />
 
-      <nav class="nav">
+      <nav class="nav" id="nav">
         <ul class="nav__list nav__list-primary">
           <li class="nav__item">
             <a href="#MyURLs" class="nav__link nav__link-accent">My URLs</a>
@@ -47,6 +50,10 @@
           </li>
         </ul>
       </nav>
+
+      <div id="menu-icon">
+        <i class="fa-solid fa-bars-staggered"></i>
+      </div>
     </header>
 
     <section class="hero">
