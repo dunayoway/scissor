@@ -1,8 +1,9 @@
 const nav = document.getElementById("nav");
 const menuIcon = document.getElementById("menu-icon");
+const navLinks = document.querySelectorAll("#nav a"); // Select all nav links
 let menuOpen = false;
 
-menuIcon.addEventListener("click", () => {
+function toggleMenu() {
   if (menuOpen) {
     menuIcon.innerHTML = '<i class="fa-solid fa-bars-staggered"></i>';
     nav.style.display = "none";
@@ -12,7 +13,17 @@ menuIcon.addEventListener("click", () => {
   }
 
   menuOpen = !menuOpen;
-  console.log(menuIcon.innerHTML);
+}
+
+menuIcon.addEventListener("click", toggleMenu);
+
+// Close the menu if any nav link is clicked
+navLinks.forEach((link) => {
+  link.addEventListener("click", () => {
+    if (menuOpen) {
+      toggleMenu();
+    }
+  });
 });
 
 // Code to shorten URL using TinyURL API via Axios
